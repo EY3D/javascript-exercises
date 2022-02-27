@@ -1,13 +1,10 @@
 const reverseString = function(x) {
-    let doneStr;
-    let shortStr;
+    let doneStr ="";
+    let shortStr = x;
     let letter;
     for (let i = 0; i < x.length; i++){
-        shortStr = x.slice();
         doneStr += shortStr.slice(-1);
-        shortStr = x.slice(0, -1);
-
-        
+        shortStr = shortStr.slice(0, -1);       
     }
     return doneStr;
 
